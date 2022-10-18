@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="traductor.js"></script>
+        <link rel="stylesheet" href="traductor.css">
+        <title>Traductor</title>
+    </head>
+    <body>
+        <section>
+        <table id="tablaIdiomaOrigen">
+            <tr>
+                <td>
+                <select id="selectIdiomaOrigen">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><textarea id="entrada" cols="30" rows="10" onchange="translateText()"></textarea></td>
+            </tr>
+        </table>
+        <table id="tablaIdiomaDestino">
+            <tr>
+                <td>
+                <select id="selectIdiomaDestino">
+                    <option value="es">Español</option>
+                    <option value="en" selected>Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><textarea id="salida" cols="30" rows="10" disabled></textarea></td>
+            </tr>
+        </table>
+        </section>
+    </body>
+</html>
