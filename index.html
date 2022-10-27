@@ -9,37 +9,36 @@
         <title>Traductor</title>
     </head>
     <body>
-        <section>
-        <table id="tablaIdiomaOrigen">
-            <tr>
-                <td>
-                <select id="selectIdiomaOrigen">
-                    <option value="es">Español</option>
-                    <option value="en">Inglés</option>
-                    <option value="fr">Francés</option>
-                    <option value="de">Alemán</option>
-                </select>
-                </td>
-            </tr>
-            <tr>
-                <td><textarea id="entrada" cols="30" rows="10" onchange="translateText()"></textarea></td>
-            </tr>
-        </table>
-        <table id="tablaIdiomaDestino">
-            <tr>
-                <td>
-                <select id="selectIdiomaDestino">
-                    <option value="es">Español</option>
-                    <option value="en" selected>Inglés</option>
-                    <option value="fr">Francés</option>
-                    <option value="de">Alemán</option>
-                </select>
-                </td>
-            </tr>
-            <tr>
-                <td><textarea id="salida" cols="30" rows="10" disabled></textarea></td>
-            </tr>
-        </table>
-        </section>
+        <div id="contenedor1">
+            <select id="selectIdiomaOrigen">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+                <option value="ru">Ruso</option>
+                <option value="ja">Japonés</option>
+                <option value="zh">Chino</option>
+            </select>
+            <textarea id="entrada" cols="30" rows="10" onchange="translateText()"></textarea>
+            <img src="microphone-solid-24.png" alt="escuchar" id="escuchar" onclick="escuchar()">
+        </div>
+        <div id="contenedor2">
+            <select id="selectIdiomaDestino">
+                <option value="es">Español</option>
+                <option value="en" selected>Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+                <option value="ru">Ruso</option>
+                <option value="ja">Japonés</option>
+                <option value="zh">Chino</option>
+            </select>
+            <textarea id="salida" cols="30" rows="10" disabled></textarea>
+            <img src="altavoz512.png" alt="escuchar" id="escuchar" height="24" onclick="hablar()">
+        </div>
+        <select id="speech-select"></select>
     </body>
 </html>
